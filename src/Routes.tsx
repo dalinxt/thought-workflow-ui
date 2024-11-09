@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { workflowRegistrationPage } from "./constants/uiEndpoints";
-import { WorkflowRegistration } from "./components/WorkflowRegistration";
+import { workflowRegistrationPageUIURL } from "./features/workflowRegistration/endpoints";
+import { WorkflowRegistrationComponent } from "./features/workflowRegistration/WorkflowRegistrationComponent";
 
 export const UIRoutes = () => (
   <BrowserRouter>
     <Routes>
-      <Route path={workflowRegistrationPage} Component={WorkflowRegistration} />
+      <Route path={workflowRegistrationPageUIURL} Component={WorkflowRegistrationComponent} />
     </Routes>
   </BrowserRouter>
 );
