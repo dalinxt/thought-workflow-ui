@@ -1,0 +1,1 @@
+export const workflowRegistrationPage = "/workflow-registration"
